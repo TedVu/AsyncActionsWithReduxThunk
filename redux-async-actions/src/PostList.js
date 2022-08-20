@@ -4,6 +4,10 @@ import { fetchPosts } from "./actions";
 import { useEffect } from "react";
 
 const PostList = () => {
+  useEffect(() => {
+    console.log("PostList gets rendered");
+    fetchPosts();
+  }, []);
   return <div></div>;
 };
 
